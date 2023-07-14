@@ -25,3 +25,20 @@ st.write(
     "Try uploading an image of a handwritten digit, the model will predict which digit it is."
 )
 st.sidebar.write("## Upload your image")
+
+
+def fix_image(img):
+    image = Image.open(img)
+    img = image.convert('L')  # Convert image to grayscale
+    #resize the image to 28x28
+    img = img.resize((28, 28))
+    #convert the image to a numpy array
+    x = np.array(img)
+    #expand the dimensions of the array to match the input shape of the model
+    x = np.expand_dims(x, axis=0)
+    x = np.expand_dims(x, axis=-1)
+    #normalize the image
+    x = x / 255.0
+
+    # Perform inference
+    
