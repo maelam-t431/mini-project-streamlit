@@ -1,4 +1,11 @@
 # mini-project-streamlit
+Members:
+- Wai Hong Fung
+- Mae Lam
+- Ho Kong Leung
+- Mayuresh Nerurkar
+
+## Overview
 
 This repository contains a Streamlit application for digit classification using a Convolutional Neural Network (CNN) model trained on the MNIST dataset.
 
