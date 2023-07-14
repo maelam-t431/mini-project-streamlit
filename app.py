@@ -43,3 +43,17 @@ def fix_image(img):
     # Perform inference
     predictions = model.predict(x)
     predicted_class = np.argmax(predictions[0])
+    col1.write("Input Image :camera:")
+    col1.image(image)
+
+    col2.write("Prediction")
+    col2.write(str(predicted_class))
+
+
+col1, col2 = st.columns(2)
+my_upload = st.sidebar.file_uploader("", type=["png", "jpg", "jpeg"])
+
+if my_upload is not None:
+    fix_image(my_upload)
+else:
+    fix_image("./test.png")
