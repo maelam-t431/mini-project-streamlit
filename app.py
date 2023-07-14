@@ -41,4 +41,5 @@ def fix_image(img):
     x = x / 255.0
 
     # Perform inference
-    
+    predictions = model.predict(x)
+    predicted_class = np.argmax(predictions[0])
