@@ -1,7 +1,9 @@
 # mini-project-streamlit
 
-
 This repository contains a Streamlit application for digit classification using a Convolutional Neural Network (CNN) model trained on the MNIST dataset.
+
+## Link
+Public URL for the app is - https://mini-project-part2.streamlit.app/
 
 ## Application Overview
 
