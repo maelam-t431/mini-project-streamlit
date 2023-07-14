@@ -9,9 +9,9 @@ Public URL for the app is - https://mini-project-part2.streamlit.app/
 
 The application accepts an image of a handwritten digit as input. It preprocesses the image and feeds it to a pre-trained CNN model to predict the digit in the image.
 
-"![Image](app1.jpg)"
-"![Image](app2.jpg)"
-"![Image](app3.jpg)"
+"![Image](screenshot/app1.jpg)"
+"![Image](screenshot/app2.jpg)"
+"![Image](screenshot/app3.jpg)"
 
 ## Model Architecture
 
